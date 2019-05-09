@@ -1,0 +1,175 @@
+.header {
+    padding: 18px;
+    background-color:cornflowerblue;
+}
+
+.header > h1 {
+    font-size: 40px;
+    color:antiquewhite;
+    text-align: center;
+}
+
+.image-div {
+    align-content: center;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+    background-color: #dddddd;
+}
+
+.image-div > h3 {
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.image-div > div {
+    text-align: center;
+}
+
+.process {
+    align-content: center;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 10px; 
+    padding-bottom: 30px; 
+    background-color: #dddddd;
+}
+
+.process:hover {
+    background-color: #cccccc;
+    /* top:-25px;
+    left:-35px;
+    width:500px; */
+    height:auto;
+    display:block;
+    z-index:999;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition:    width 500ms ease-in-out;
+    -ms-transition:     width 500ms ease-in-out;
+    -o-transition:      width 500ms ease-in-out;
+    transition:         width 500ms ease-in-out;
+}
+
+.plate {
+    text-align: center;
+}
+
+.plate-heading {
+    text-align: center;
+    font-size: 26px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.upload-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.index-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.register-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.user-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.users-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.footer-text { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width:280px;
+    max-height:60px;
+    width: auto;
+    height: auto;
+}
+
+.registration-div {
+    align-content: center;
+    width: 45%;
+    margin: 0 auto;
+    padding: 10px;  
+    background-color: #dddddd;
+}
+
+.registration-header {
+    padding: 10px;
+}
+
+.registration-header > h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.registration-text {
+    align-content: center;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #bbbbbb;
+}
+
+.registration-text > h2 {
+    font-size: 42px;
+    text-align: center;
+}

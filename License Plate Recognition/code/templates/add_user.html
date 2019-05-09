@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Register User</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+        <script>
+            function userAdded() {
+                alert('User added');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="jumbotron" style="background-color:cornflowerblue">
+                <h1 align="center" style="color:antiquewhite">Register User</h1> 
+            </div>  
+        </div>
+        <div class="container" style="width: 20%; padding-top:50px">
+            <form class="form-add-user" method="POST" action="/users/add" enctype="multipart/form-data">
+                <div class="form-group" align="center">
+                    <label for="inputRegistrationNumber" class="sr-only">Registration</label>
+                    <input type="text" id="inputRegistrationNumber" name="registrationNumber" class="form-control" placeholder="Registration" style="text-align: center" required autofocus>
+                </div>
+        
+                <div class="form-group">
+                    <label for="inputFirstName" class="sr-only">First Name</label>
+                    <input type="text" id="inputFirstName" name="firstName" class="form-control" placeholder="First Name" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputLastName" class="sr-only">Last Name</label>
+                    <input type="text" id="inputLastName" name="lastName" class="form-control" placeholder="Last Name" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPhoneNumber" class="sr-only">Phone Number</label>
+                    <input type="text" id="inputPhoneNumber" name="phoneNumber" class="form-control" placeholder="Phone Number" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCarModel" class="sr-only">Car Model</label>
+                    <input type="text" id="inputCarModel" name="carModel" class="form-control" placeholder="Car Model" style="text-align: center" required autofocus>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inputCarColour" class="sr-only">Car Colour</label>
+                    <input type="text" id="inputCarColour" name="carColour" class="form-control" placeholder="Car Colour" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCarYear" class="sr-only">Car Year</label>
+                    <input type="text" id="inputCarYear" name="carYear" class="form-control" placeholder="Car Year" style="text-align: center" required autofocus>
+                </div>
+
+                <div class="form-group" style="padding-top: 15px">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="userAdded()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="register-footer">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img class="footer-img" src="{{url_for('static', filename='Logo.png')}}">
+                <h4 class="footer-text">
+                    <!-- Team Andromeda -->
+                </h4>
+            </a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
